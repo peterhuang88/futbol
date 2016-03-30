@@ -20,13 +20,15 @@
         android:layout_centerInParent="true"
         android:layout_alignWithParentIfMissing="true" />
 
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/soccer_ball"
         android:src="@drawable/soccer_ball"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
 
     <Button
         android:layout_width="wrap_content"
