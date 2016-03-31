@@ -65,6 +65,7 @@ public class MainActivity extends Activity implements OnGestureListener {
         resetButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 // reset the view of the ball
+                ball.setImageResource(0);
                 ball = (ImageView) findViewById(R.id.soccer_ball);
             }
         });
