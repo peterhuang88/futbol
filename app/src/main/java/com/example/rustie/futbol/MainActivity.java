@@ -48,6 +48,8 @@ public class MainActivity extends Activity implements OnGestureListener {
         this.goalCount = (TextView) findViewById(R.id.goals);
 
         Button button = (Button) findViewById(R.id.button);
+        Button resetButton = (Button) findViewById(R.id.restbutton);
+
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 goals++;
@@ -55,9 +57,17 @@ public class MainActivity extends Activity implements OnGestureListener {
             }
         });
 
+
         mDetector = new GestureDetectorCompat(this, this);
         ball = (ImageView) findViewById(R.id.soccer_ball);
 
+
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                // reset the view of the ball
+                ball = (ImageView) findViewById(R.id.soccer_ball);
+            }
+        });
 
     }
 
